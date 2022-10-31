@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Basketball Counter</title>
+</head>
+<body>
+    <div class="container">
+        <div class="scoreboard" id="away">
+            <h3>AWAY</h3>
+            <h1 class="scoreboard" id="scoreboard__away">00</h1>
+            <div class="scorecard" id="scorecard__away">
+                <button class="scorebtn" onclick="updateAwayScoreboard(+1)">+1</button>
+                <button class="scorebtn" onclick="updateAwayScoreboard(+2)">+2</button>
+                <button class="scorebtn" onclick="updateAwayScoreboard(+3)">+3</button>
+                <button class="scorebtn" onclick="updateAwayScoreboard(-1)">-1</button>
+            </div>
+        </div>
+
+        <div class="scoreboard" id="home">
+            <h3>HOME</h3>
+            <h1 class="scoreboard" id="scoreboard__home">00</h1>
+            <div class="scorecard" id="scorecard__home">
+                <button class="scorebtn" onclick="updateHomeScoreboard(+1)">+1</button>
+                <button class="scorebtn" onclick="updateHomeScoreboard(+2)">+2</button>
+                <button class="scorebtn" onclick="updateHomeScoreboard(+3)">+3</button>
+                <button class="scorebtn"onclick="updateHomeScoreboard(-1)">-1</button>
+            </div>
+        </div>
+
+        <button onclick="newGame()">New Game</button>
+    </div>
+
+    <footer>
+        Made with 💓 by Natsurii. All rights reserved 2022.
+    </footer>
+</body>
+</html>
